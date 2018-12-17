@@ -3,6 +3,7 @@ package com.tihor.practice.model;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * The type Employee.
@@ -20,7 +21,7 @@ public class Employee implements Serializable {
     private String name;
 
     /**
-     * Age.
+     * Date of Birth.
      */
-    private Integer age;
+    private Date dob;
 }
