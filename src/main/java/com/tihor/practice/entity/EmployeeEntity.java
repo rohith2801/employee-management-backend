@@ -15,12 +15,31 @@ public class EmployeeEntity {
     /**
      * Instantiates a new Employee entity.
      *
+     * @param id   the id
+     * @param name the name
+     * @param dob  the dob
+     */
+    public EmployeeEntity(final Long id, final String name, final Date dob) {
+        this.id = id;
+        this.name = name;
+        this.dob = dob;
+    }
+
+    /**
+     * Instantiates a new Employee entity.
+     *
      * @param name the name
      * @param dob  the dob
      */
     public EmployeeEntity(final String name, final Date dob) {
         this.name = name;
         this.dob = dob;
+    }
+
+    /**
+     * Instantiates a new Employee entity.
+     */
+    private EmployeeEntity() {
     }
 
     /**

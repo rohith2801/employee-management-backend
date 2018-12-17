@@ -20,4 +20,14 @@ public final class EmployeeMapper {
 
         return response;
     }
+
+    /**
+     * Map employee to employee entity employee entity.
+     *
+     * @param employee the employee
+     * @return the employee entity
+     */
+    public static EmployeeEntity mapEmployeeToEmployeeEntity(final Employee employee) {
+        return new EmployeeEntity(employee.getId(), employee.getName(), employee.getDob());
+    }
 }
